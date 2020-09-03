@@ -6,20 +6,6 @@
     (function($) {
   "use strict"; // Start of use strict
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 72)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -44,20 +30,17 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Magnific popup calls
-  // $('#portfolio').magnificPopup({
-  //   delegate: 'a',
-  //   type: 'image',
-  //   tLoading: 'Loading image #%curr%...',
-  //   mainClass: 'mfp-img-mobile',
-  //   gallery: {
-  //     enabled: true,
-  //     navigateByImgClick: true,
-  //     preload: [0, 1]
-  //   },
-  //   image: {
-  //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-  //   }
-  // });
+  var elem = document.querySelector('.main-carousel');
+ var flkty = new Flickity( elem, {
+   // options
+   cellAlign: 'left',
+   contain: true
+ });
+
+ // element argument can be a selector string
+ //   for an individual element
+ var flkty = new Flickity( '.main-carousel', {
+   // options
+ });
 
 })(jQuery); // End of use strict

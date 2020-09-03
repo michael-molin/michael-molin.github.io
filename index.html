@@ -16,7 +16,10 @@
         <!-- Third party plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <link href="css/style.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -49,105 +52,127 @@
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section  bg-primary-color" id="services">
             <div class="container">
-                <h2 class="text-center mt-0">Linguaggi di programmazione </h2>
-                <hr class="divider my-4" />
+                <h2 class="text-center mt-0 text-white">Linguaggi di programmazione </h2>
+                <hr class="divider my-4 light"/>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fab fa-4x fa-html5 text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">HTML</h3>
-                            <p class="text-muted mb-0">La struttura base di ogni sito e applicazione Web</p>
+                            <i class="fab fa-4x fa-html5 mb-4 text-white"></i>
+                            <h3 class="h4 mb-2 text-white">HTML</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fab fa-4x fa-sass text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">CSS/SASS</h3>
-                            <p class="text-muted mb-0">Fogli di stile Css/Sass insieme a framework come Boostrap</p>
+                            <i class="fab fa-4x fa-css3-alt mb-4 text-white"></i>
+                            <h3 class="h4 mb-2 text-white">CSS</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fab fa-4x fa-js-square text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">Javascript</h3>
-                            <p class="text-muted mb-0">Javascript e altre librerie/Framework: Jquery, Vue, Moment.js, Chart.js, Algolia, Leaf..</p>
+                            <i class="fab fa-4x fab fa-sass mb-4 text-white"></i>
+                            <h3 class="h4 mb-2 text-white">SASS</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fab fa-4x fa-php text-primary mb-4"></i>
-                            <h3 class="h4 mb-2">PHP</h3>
-                            <p class="text-muted mb-0">Sviluppo Back-End utilizzando PHP e Laravel</p>
+                            <i class="fab fa-4x fa-php mb-4 text-white"></i>
+                            <h3 class="h4 mb-2 text-white">PHP</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fab fa-4x fa-js-square mb-4 text-white"></i>
+                            <h3 class="h4 mb-2 text-white">Javascript</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <img src="assets/img/jquery.png" class="mb-4 img-ico"></i>
+                            <h3 class="h4 mb-2 text-white">JQuery</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fab fa-4x fa-vuejs mb-4 text-white"></i>
+                            <h3 class="h4 mb-2 text-white">Vue Js</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fab fa-4x fa-laravel mb-4 text-white"></i>
+                            <h3 class="h4 mb-2 text-white">Laravel</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://github.com/michael-molin/boolbnb-team6">
-                            <img class="img-fluid" src="assets/img/airbnb.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">BoolBnB</div>
-                                <div class="project-name">Progetto ispirato ad AirBnB. Utilizza Html, Sass, Php, MySql e svariate librerie Javascript</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 portfolio-box">
-                        <a href="https://github.com/michael-molin/js-html-css-boolzap">
-                            <img class="img-fluid" src="assets/img/whatsapp.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Boolzap</div>
-                                <div class="project-name">Replica interfaccia Whatsapp Web. Utilizza Html, Css e Js, Jquery e le librerie Moment.js e Handlebars</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://github.com/michael-molin/ajax-ex-boolflix">
-                            <img class="img-fluid" src="assets/img/boolflix.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">BoolFlix</div>
-                                <div class="project-name">Progetto ispirato a Netflix, Utilizza Html, css, Js e in particolar modo Jquery</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://github.com/michael-molin/html-css-spotifyweb">
-                            <img class="img-fluid" src="assets/img/spotify.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Spotify Web</div>
-                                <div class="project-name">Replica interfaccia Spotify Web. Utilizza con Html e Css</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://github.com/michael-molin/rest-chartbool">
-                            <img class="img-fluid" src="assets/img/chart.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">ChartBool</div>
-                                <div class="project-name">Progetto ispirato ad un report aziendale. Utilizza Js, Jquery, Moment.js e Chart.js</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://github.com/michael-molin/html-css-hubspot">
-                            <img class="img-fluid" src="assets/img/hubspot.jpg" alt="" />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Hubspot</div>
-                                <div class="project-name">Replica del sito Hubspot.com. Utilizza Html e Css</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio" class="container-fluid">
+            <h2 class="text-center mt-0">I miei Progetti </h2>
+            <hr class="divider my-4" />
+            <div class="main-carousel container">
+              <div class="carousel-cell">
+                  <a href="https://github.com/michael-molin/vuetify_news">
+                      <div class="text-center">
+                          <img class="img-fluid" src="assets/img/vuetify.png" alt="" />
+                          <h2 class="text-primary-color">Vuetify-News-Meteo</h2>
+                          <p class="text-primary-color">Progetto ispirato ad un possibile Quotidiano Online. Utilizza Vue Js insieme a Vuetify</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="carousel-cell">
+                  <a href="https://github.com/michael-molin/boolbnb-team6">
+                      <div class="text-center">
+                          <img class="img-fluid" src="assets/img/airbnb.jpg" alt="" />
+                          <h2 class="text-primary-color">BoolBnB</h2>
+                          <p class="text-primary-color">Progetto ispirato ad AirBnB. Utilizza Html, Sass, Php, MySql e svariate librerie Javascript</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="carousel-cell">
+                  <a class="portfolio-box" href="https://github.com/michael-molin/js-html-css-boolzap">
+                      <div class="portfolio-box-caption text-center">
+                          <img class="img-fluid" src="assets/img/whatsapp.jpg" alt="" />
+                          <h2 class="text-primary-color">Boolzap</h2>
+                          <p class="text-primary-color">Replica interfaccia Whatsapp Web. Utilizza Html, Css e Js, Jquery e le librerie Moment.js e Handlebars</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="carousel-cell">
+                  <a class="portfolio-box" href="https://github.com/michael-molin/ajax-ex-boolflix">
+                      <div class="portfolio-box-caption card text-center">
+                          <img class="img-fluid" src="assets/img/boolflix.jpg" alt="" />
+                          <h2 class="text-primary-color">BoolFlix</h2>
+                          <p class="text-primary-color">Progetto ispirato a Netflix, Utilizza Html, css, Js e in particolar modo Jquery</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="carousel-cell">
+                  <a class="portfolio-box" href="https://github.com/michael-molin/html-css-spotifyweb">
+                      <div class="portfolio-box-caption card text-center">
+                          <img class="img-fluid" src="assets/img/spotify.jpg" alt="" />
+                          <h2 class="text-primary-color">Spotify Web</h2>
+                          <p class="text-primary-color">Replica interfaccia Spotify Web. Utilizza con Html e Css</p>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="carousel-cell">
+                  <a class="portfolio-box" href="https://github.com/michael-molin/rest-chartbool">
+                      <div class="portfolio-box-caption card text-center">
+                          <img class="img-fluid" src="assets/img/chart.jpg" alt="" />
+                          <h2 class="text-primary-color">CharBool</h2>
+                          <p class="text-primary-color">Progetto ispirato ad un report aziendale. Utilizza Js, Jquery, Moment.js e Chart.js</p>
+                      </div>
+                  </a>
+              </div>
+
             </div>
         </div>
         <!-- About-->
-        <section class="page-section bg-primary" id="about">
+        <section class="page-section bg-primary-color" id="about">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
@@ -170,15 +195,19 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-envelope-open fa-3x mb-3 text-primary"></i>
+                        <i class="fas fa-envelope-open fa-3x mb-3 text-primary-color"></i>
                         <div>
-                            <a href="mailto:m.molin.1987@gmail.com">m.molin.1987@gmail.com</a>
+                            <a href="mailto:m.molin.1987@gmail.com" class="text-primary-color">m.molin.1987@gmail.com</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 mr-auto text-center">
-                        <i class="fab fa-linkedin fa-3x mb-3 text-primary"></i>
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fab fa-linkedin fa-3x mb-3 text-primary-color"></i>
                         <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-                        <a class="d-block" href="https://www.linkedin.com/in/michael-molin-528ab0175/">michael-molin-528ab0175/</a>
+                        <a class="d-block text-primary-color" href="https://www.linkedin.com/in/michael-molin-528ab0175/">michael-molin-528ab0175/</a>
+                    </div>
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fab fa-github fa-3x mb-3 text-primary-color"></i>
+                        <a class="d-block text-primary-color" href="https://github.com/michael-molin">/michael-molin</a>
                     </div>
                 </div>
             </div>
