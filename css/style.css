@@ -158,7 +158,7 @@ header.masthead h1 {
     padding-bottom: 8px;
 }
 
-.text-primary-color {
+.text-primary-color, .btn-carousel {
     color: #f4623a;
 }
 
@@ -171,37 +171,14 @@ a:hover {
     text-decoration: none;
 }
 
-.carousel-cell {
-    width: 100%;
-    height: auto;
-    margin-right: 10px;
+.carousel-item {
+  height:100%;
 }
 
-.flickity-button {
-    background-color: white;
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f4623a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f4623a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
-/* icon color */
-.flickity-button-icon {
-  fill: black;
-}
-.flickity-button-icon:hover {
-  fill: #f4623a;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
-}
-
-@media (max-width: 992px) {
-  .flickity-prev-next-button.previous, .flickity-prev-next-button.next {
-    display: none;
-  }

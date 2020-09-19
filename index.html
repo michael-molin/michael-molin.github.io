@@ -12,8 +12,6 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body id="page-top">
@@ -103,69 +101,87 @@
                 </div>
             </div>
         </section>
+
         <!-- Portfolio-->
         <div id="portfolio" class="container-fluid">
             <h2 class="text-center mt-0">I miei Progetti </h2>
             <hr class="divider my-4" />
-            <div class="main-carousel container">
-              <div class="carousel-cell">
-                  <a href="https://github.com/michael-molin/vuetify_news">
-                      <div class="text-center">
-                          <img class="img-fluid" src="assets/img/vuetify.png" alt="" />
-                          <h2 class="text-primary-color">Vuetify-News-Meteo</h2>
-                          <p class="text-primary-color">Progetto ispirato ad un possibile Quotidiano Online. Utilizza Vue Js insieme a Vuetify</p>
-                      </div>
-                  </a>
-              </div>
-              <div class="carousel-cell">
-                  <a href="https://github.com/michael-molin/boolbnb-team6">
-                      <div class="text-center">
-                          <img class="img-fluid" src="assets/img/airbnb.jpg" alt="" />
-                          <h2 class="text-primary-color">BoolBnB</h2>
-                          <p class="text-primary-color">Progetto ispirato ad AirBnB. Utilizza Html, Sass, Php, MySql e svariate librerie Javascript</p>
-                      </div>
-                  </a>
-              </div>
-              <div class="carousel-cell">
-                  <a class="portfolio-box" href="https://github.com/michael-molin/js-html-css-boolzap">
-                      <div class="portfolio-box-caption text-center">
-                          <img class="img-fluid" src="assets/img/whatsapp.jpg" alt="" />
-                          <h2 class="text-primary-color">Boolzap</h2>
-                          <p class="text-primary-color">Replica interfaccia Whatsapp Web. Utilizza Html, Css e Js, Jquery e le librerie Moment.js e Handlebars</p>
-                      </div>
-                  </a>
-              </div>
-              <div class="carousel-cell">
-                  <a class="portfolio-box" href="https://github.com/michael-molin/ajax-ex-boolflix">
-                      <div class="portfolio-box-caption card text-center">
-                          <img class="img-fluid" src="assets/img/boolflix.jpg" alt="" />
-                          <h2 class="text-primary-color">BoolFlix</h2>
-                          <p class="text-primary-color">Progetto ispirato a Netflix, Utilizza Html, css, Js e in particolar modo Jquery</p>
-                      </div>
-                  </a>
-              </div>
-              <div class="carousel-cell">
-                  <a class="portfolio-box" href="https://github.com/michael-molin/html-css-spotifyweb">
-                      <div class="portfolio-box-caption card text-center">
-                          <img class="img-fluid" src="assets/img/spotify.jpg" alt="" />
-                          <h2 class="text-primary-color">Spotify Web</h2>
-                          <p class="text-primary-color">Replica interfaccia Spotify Web. Utilizza con Html e Css</p>
-                      </div>
-                  </a>
-              </div>
-
-              <div class="carousel-cell">
-                  <a class="portfolio-box" href="https://github.com/michael-molin/rest-chartbool">
-                      <div class="portfolio-box-caption card text-center">
-                          <img class="img-fluid" src="assets/img/chart.jpg" alt="" />
-                          <h2 class="text-primary-color">CharBool</h2>
-                          <p class="text-primary-color">Progetto ispirato ad un report aziendale. Utilizza Js, Jquery, Moment.js e Chart.js</p>
-                      </div>
-                  </a>
-              </div>
-
-            </div>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner container">
+                    <div class="carousel-item active">
+                        <a href="https://github.com/michael-molin/laravel-vue-stripe">
+                            <div class="text-center">
+                                <img class="img-fluid" src="assets/img/stripe.png" alt="" />
+                                <h2 class="text-primary-color">Laravel-Vue-Stripe</h2>
+                                <p class="text-primary-color">Progetto ispirato ad un Checkout Online. Utilizza Vue Js insieme a Laravel e alla libreria Stripe</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/michael-molin/vuetify_news">
+                            <div class="text-center">
+                                <img class="img-fluid" src="assets/img/vuetify.png" alt="" />
+                                <h2 class="text-primary-color">Vuetify-News-Meteo</h2>
+                                <p class="text-primary-color">Progetto ispirato ad un possibile Quotidiano Online. Utilizza Vue Js insieme a Vuetify</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/michael-molin/boolbnb-team6">
+                            <div class="text-center">
+                                <img class="img-fluid" src="assets/img/airbnb.jpg" alt="" />
+                                <h2 class="text-primary-color">BoolBnB</h2>
+                                <p class="text-primary-color">Progetto ispirato ad AirBnB. Utilizza Html, Sass, Php, MySql e svariate librerie Javascript</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="portfolio-box" href="https://github.com/michael-molin/js-html-css-boolzap">
+                            <div class="portfolio-box-caption text-center">
+                                <img class="img-fluid" src="assets/img/whatsapp.jpg" alt="" />
+                                <h2 class="text-primary-color">Boolzap</h2>
+                                <p class="text-primary-color">Replica interfaccia Whatsapp Web. Utilizza Html, Css e Js, Jquery e le librerie Moment.js e Handlebars</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="portfolio-box" href="https://github.com/michael-molin/ajax-ex-boolflix">
+                            <div class="portfolio-box-caption card text-center">
+                                <img class="img-fluid" src="assets/img/boolflix.jpg" alt="" />
+                                <h2 class="text-primary-color">BoolFlix</h2>
+                                <p class="text-primary-color">Progetto ispirato a Netflix, Utilizza Html, css, Js e in particolar modo Jquery</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="portfolio-box" href="https://github.com/michael-molin/html-css-spotifyweb">
+                            <div class="portfolio-box-caption card text-center">
+                                <img class="img-fluid" src="assets/img/spotify.jpg" alt="" />
+                                <h2 class="text-primary-color">Spotify Web</h2>
+                                <p class="text-primary-color">Replica interfaccia Spotify Web. Utilizza con Html e Css</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="portfolio-box" href="https://github.com/michael-molin/rest-chartbool">
+                            <div class="portfolio-box-caption card text-center">
+                                <img class="img-fluid" src="assets/img/chart.jpg" alt="" />
+                                <h2 class="text-primary-color">CharBool</h2>
+                                <p class="text-primary-color">Progetto ispirato ad un report aziendale. Utilizza Js, Jquery, Moment.js e Chart.js</p>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev" id="btn-prev">
+                    <span class="carousel-control-prev-icon btn-carousel" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next" id="-btn-next">
+                    <span class="carousel-control-next-icon btn-carousel" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
         </div>
+    
         <!-- About-->
         <section class="page-section bg-primary-color" id="about">
             <div class="container">
@@ -174,7 +190,7 @@
                         <h2 class="text-white mt-0">Chi sono?</h2>
                         <hr class="divider light my-4" />
                         <h4 class="text-white mb-4">Junior Full Stack Web Developer</h4>
-                        <p class="text-white mb-4">Sono un ragazzo originario dalla provincia di Venezia. La passione per l'informatica e il mondo del web mi ha sempre accompagnato nel corso degli anni. Oltre alla passione per il comparto Tech, adoro sia la natura che la fotografia. Per anni ho lavorato nel mondo del turismo che grazie a Venezia attira migliaia di persone da tutto il mondo, ho sviluppato una particolare capacità di gestire ogni cliente, capacità che ho integrato pure nell'ambito informatico.</p>
+                        <p class="text-white mb-4">Sono un ragazzo originario dalla provincia di Venezia. La passione per l'informatica e il mondo del web mi ha sempre accompagnato nel corso degli anni. Oltre alla passione per il comparto Tech, adoro sia la natura che la fotografia. Per anni ho lavorato nel mondo del turismo che grazie a Venezia attira migliaia di persone da tutto il mondo, ho sviluppato una particolare capacità di gestire ogni cliente, capacità che ho integrato pure nell'ambito informatico.<br> Automunito e disponibile fin da subito.</p>
                     </div>
                 </div>
             </div>
@@ -190,19 +206,22 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-envelope-open fa-3x mb-3 text-primary-color"></i>
-                        <div>
-                            <a href="mailto:m.molin.1987@gmail.com" class="text-primary-color">m.molin.1987@gmail.com</a>
-                        </div>
+                        <a href="mailto:m.molin.1987@gmail.com" class="d-block text-primary-color">
+                            <i class="fas fa-envelope-open fa-3x mb-3 text-primary-color"></i>
+                            <p>m.molin.1987@gmail.com</p>
+                        </a>
                     </div>
                     <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fab fa-linkedin fa-3x mb-3 text-primary-color"></i>
-                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-                        <a class="d-block text-primary-color" href="https://www.linkedin.com/in/michael-molin-528ab0175/">michael-molin-528ab0175/</a>
+                        <a class="d-block text-primary-color" href="https://www.linkedin.com/in/michael-molin-528ab0175/">
+                            <i class="fab fa-linkedin fa-3x mb-3 text-primary-color"></i>
+                            <p>michael-molin-528ab0175/</p> 
+                        </a>
                     </div>
                     <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fab fa-github fa-3x mb-3 text-primary-color"></i>
-                        <a class="d-block text-primary-color" href="https://github.com/michael-molin">/michael-molin</a>
+                        <a class="d-block text-primary-color" href="https://github.com/michael-molin">
+                            <i class="fab fa-github fa-3x mb-3 text-primary-color"></i>
+                            <p>/michael-molin</p>  
+                        </a>
                     </div>
                 </div>
             </div>
